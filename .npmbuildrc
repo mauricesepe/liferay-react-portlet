@@ -1,0 +1,17 @@
+{
+	"webpack": {
+		"entry": {
+			"index": ["babel-polyfill", "./src/index.js"]
+		},
+		"rules": [
+			{
+				"test": "src\\/.*\\.js$",
+				"use": "babel-loader"
+			},
+			{
+				"test": "\\.css$",
+				"use": ["style-loader", "css-loader"]
+			}
+		]
+	}
+}

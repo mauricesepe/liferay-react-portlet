@@ -1,0 +1,23 @@
+{
+  "sources": ["src", "assets"],
+  "rules": [
+    {
+      "test": "\\.css$",
+      "exclude": "node_modules",
+      "use": ["css-loader"]
+    },
+    {
+      "test": "^assets/",
+      "exclude": "node_modules",
+      "use": ["copy-loader"]
+    }
+  ],
+  "create-jar": {
+    "output-dir": "dist",
+    "features": {
+      "js-extender": true,
+      "web-context": "/single-channel-epg"
+    }
+  },
+  "dump-report": true
+}

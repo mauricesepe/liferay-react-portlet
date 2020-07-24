@@ -1,0 +1,13 @@
+{
+    "portletInstance": {
+        "name": "Single Channel EPG Configuration",
+        "fields": {
+            "tags": {
+                "type": "string",
+                "name": "Channel",
+                "description": "Channel Number (i.e.: 010)",
+                "default": ""
+            }
+        }
+    }
+} 
